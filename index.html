@@ -1,0 +1,33 @@
+<html>
+<head>
+<link href="WritingHTML.css" rel="stylesheet" type="text/css">   
+    <script type="text/javascript" src="../d3.js"></script>
+</head>
+<body>
+<h1>Writing HTML</h1>
+    <div class="basics">
+        <h3>Basic d3 Methods</h3>
+    <dl>
+    <dt>Select</dt> 
+        <dd>The select() command takes a CSS selector as its input and hands off a reference to the first element in the DOM that matches that selector. Use select(“p”) to get the first paragraph element or selectAll(“p”) to get a reference to all of the paragraph elements in the DOM. </dd>
+    <dt>Append</dt>
+        <dd>The append() command creates a new DOM element that you specify and appends it just inside the end of the element it was handed by the select function. It then hands off a reference to this new element to the next method in the chain.
+        </dd>
+    <dt>Text</dt>
+        <dd>The text() command inserts a string between the opening and closing tags of the current selection. If there was existing content, it will be overwritten.
+        </dd>
+    <dt>Style</dt>
+        <dd>The style() command sets a CSS property on a given selection. It can also be attached to a function that creates an if then situation, which could prove useful in categorizing data. 
+        </dd>
+    </dl>
+    </div>
+    <div class="spin">
+        <h3>Trying it Out</h3>
+        <p>Empty Paragraph</p>
+    </div>
+<script type="text/javascript">
+d3.select("body").append("p").text("Hello World!");   
+</script>
+    
+</body>
+</html>
