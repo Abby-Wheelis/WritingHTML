@@ -25,18 +25,17 @@
         <h3>Trying it Out</h3>
         <p> Hello World added by using the following code: 
         <pre> 
-        d3.select("body").append("p").text("Hello World!");
+      
         </pre>
     </div>
 <script type="text/javascript">
-d3.select("body").append("p").text("Hello World!"); 
 var dataset= ["red", "orange", "yellow", "green", "blue", "purple"]
 d3.select("body").selectAll("p")
                             .data(dataset)
                             .enter()
                             .append("p")
                             .text(function(d)
-                                  {return d; });
+                                  {return "One of the basic colors is:" + d; });
 </script>
     
 </body>
