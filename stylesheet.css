@@ -1,0 +1,35 @@
+.basics
+{
+    background-color: #DDCECD;
+    width: 800px;
+    padding: 10px;
+}
+
+.spin
+{
+    background-color: #EEE5E5;
+    width: 800px;
+    padding: 10px;
+}
+
+h1
+{
+    color: #6C698D;
+    font-weight: bolder;
+    font-size: 36px;
+    font-family:cursive;
+}
+
+h3
+{
+    color: #466060;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+body
+{
+  background-color: #B5D6B2;
+    color: #0B3C49;
+    font-size: 18px;
+}
