@@ -23,10 +23,17 @@
     </div>
     <div class="spin">
         <h3>Trying it Out</h3>
-        <p> Hello World added by using the following code: 
+        <p>Color list created with the following code: 
         <pre> 
-      
+      var dataset= ["red", "orange", "yellow", "green", "blue", "purple"]
+d3.select("body").selectAll("p")
+                            .data(dataset)
+                            .enter()
+                            .append("p")
+                            .text(function(d)
+                                  {return "One of the basic colors is:" + d; });
         </pre>
+        </p>
     </div>
 <script type="text/javascript">
 var dataset= ["red", "orange", "yellow", "green", "blue", "purple"]
